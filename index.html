@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <div class="calculator">
+                <h1>Calculator</h1>
+                <p id="result" aria-live="polite" role="textbox"></p>
+                <table>
+                    <tr>
+                        <td><button class="botao" onclick="clean()">C</button></td>
+                        <td><button class="botao" onclick="back()">Del</button></td>
+                        <td><button class="botao" onclick="insert('/')">/</button></td>
+                        <td><button class="botao" onclick="insert('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('7')">7</button></td>
+                        <td><button class="botao" onclick="insert('8')">8</button></td>
+                        <td><button class="botao" onclick="insert('9')">9</button></td>
+                        <td><button class="botao" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('4')">4</button></td>
+                        <td><button class="botao" onclick="insert('5')">5</button></td>
+                        <td><button class="botao" onclick="insert('6')">6</button></td>
+                        <td><button class="botao" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('1')">1</button></td>
+                        <td><button class="botao" onclick="insert('2')">2</button></td>
+                        <td><button class="botao" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="botao" style="height: 103px;" onclick="calculate()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="botao" style="width: 103px;" onclick="insert('0')">0</button></td>
+                        <td><button class="botao" onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div> 
+            <p class="additional-text"> I don't know why, but this calculator loves the Maracanã stadium. Therefore, all of its answers are a function of the total area of the Maracanã. It converts the answer you want into the percentage equivalent to the area. I don't know if it will ever have a proper purpose, but I'll let it dream.</p>
+            </div>
+
+            <div class="info">
+                <img src="maracana.jpg" class="info-image">
+                <p class="info-text">For comparasion with the calculator's answers, this is the Maracanã. Its total size in square meters, on which the calculator is based, is 186.638m².</p>
+            </div>
+        </div>
+    </div>
+    <h1 class="top-phrase">Useless Calculator</h1>
+    <script src="script.js"></script>
+</body>
+</html>
